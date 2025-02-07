@@ -3,18 +3,21 @@ import { ChartBar, Pill, Bot } from 'lucide-react';
 
 const HealthTrackingFeatures = () => {
   return (
-    <div className="p-6 rounded-lg max-w-4xl mx-auto bg-transparent">
+    <div className="p-6 max-w-4xl mx-auto">
+      {/* Heading */}
       <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">
         Personalized care with smart health tracking Future
       </h1>
       
+      {/* Subtext */}
       <div className="text-gray-600 text-center mb-8">
         We calculate your BMI index from data like age, height, weight.
       </div>
       
+      {/* Feature Grid - Only these will have a white background */}
       <div className="grid md:grid-cols-3 gap-6">
         {/* Treatment Recommendations */}
-        <div className="p-5 rounded-lg text-center">
+        <div className="p-5 text-center shadow-md rounded-lg bg-white">
           <div className="flex justify-center mb-4">
             <Pill className="text-blue-600" size={48} />
           </div>
@@ -27,7 +30,7 @@ const HealthTrackingFeatures = () => {
         </div>
         
         {/* Interactive Health Assistant */}
-        <div className="p-5 rounded-lg text-center">
+        <div className="p-5 text-center shadow-md rounded-lg bg-white">
           <div className="flex justify-center mb-4">
             <Bot className="text-green-600" size={48} />
           </div>
@@ -40,7 +43,7 @@ const HealthTrackingFeatures = () => {
         </div>
         
         {/* Health Insights */}
-        <div className="p-5 rounded-lg text-center">
+        <div className="p-5 text-center shadow-md rounded-lg bg-white">
           <div className="flex justify-center mb-4">
             <ChartBar className="text-purple-600" size={48} />
           </div>

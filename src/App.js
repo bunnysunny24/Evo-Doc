@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <BackgroundEffects /> {/* Keeps the background fixed across the page */}
-      <div className="App">
+      <div className="App relative z-10">
         <Header />
-        <Track />
+        <Track /> {/* Now has contrast & is visible */}
       </div>
     </>
   );

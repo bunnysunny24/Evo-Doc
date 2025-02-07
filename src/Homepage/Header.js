@@ -1,30 +1,15 @@
 import React from 'react';
 import { Search, Mic, Image } from 'lucide-react';
 import LogoImage from '../image/image.png'; // Adjust the path based on your project structure
-import doc from '../image/doc.png'
+import doc from '../image/doc.png';
 
 const Logo = () => (
   <img src={LogoImage} alt="EvoDoc Logo" className="w-48" />
 );
 
-const FloatingShape = ({ className }) => (
-  <div className={`absolute w-8 h-8 rounded-lg bg-blue-100/20 animate-float ${className}`} />
-);
-
 const HealthcareLanding = () => {
   return (
-    <div className="min-h-screen bg-[#F5F7FF] relative overflow-hidden">
-      {/* Floating shapes */}
-      <div className="absolute top-20 left-1/4">
-        <div className="w-4 h-4 bg-yellow-300/20 rounded animate-float" />
-      </div>
-      <div className="absolute top-40 right-1/4">
-        <div className="w-4 h-4 bg-blue-300/20 rounded animate-float-delay" />
-      </div>
-      <div className="absolute bottom-20 left-1/3">
-        <div className="w-4 h-4 bg-red-300/20 rounded animate-float" />
-      </div>
-      
+    <div className="min-h-screen relative overflow-hidden">
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
@@ -85,7 +70,6 @@ const HealthcareLanding = () => {
         {/* Hero Image */}
         <div className="w-1/2 flex justify-center">
           <div className="relative w-96 h-96">
-            <div className="" />
             <img
                 src={doc}
                 alt="Doctor with laptop"

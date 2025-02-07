@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background: transparent; /* Ensure no background overrides */
+  position: relative; /* Keep it above background effects */
+  z-index: 1;
 }
 
 .App-logo {
@@ -13,8 +16,8 @@
   }
 }
 
+/* Removed background-color to allow BackgroundEffects to be visible */
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +25,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: transparent; /* Make sure background is not blocking */
 }
 
 .App-link {
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Ensure BackgroundEffects is fixed behind everything */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Keep it behind all content */
 }

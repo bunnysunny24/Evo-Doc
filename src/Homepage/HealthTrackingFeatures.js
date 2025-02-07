@@ -1,57 +1,48 @@
-import React from 'react';
-import { ChartBar, Pill, Bot } from 'lucide-react';
+import React from "react";
+import { Utensils, Bot, ChartBar, HeartPulse } from "lucide-react";
 
 const HealthTrackingFeatures = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      {/* Heading */}
-      <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">
-        Personalized care with smart health tracking Future
-      </h1>
-      
-      {/* Subtext */}
-      <div className="text-gray-600 text-center mb-8">
-        We calculate your BMI index from data like age, height, weight.
+    <div className="p-8 max-w-6xl mx-auto">
+      {/* Title Section */}
+      <div className="mb-12 text-center">
+        <h3 className="text-blue-600 font-semibold uppercase tracking-wide">
+          Features We Provide
+        </h3>
+        <h1 className="text-4xl font-bold text-black mt-2">
+          Calculating BMI is easier <HeartPulse className="inline text-blue-500" size={32} />
+        </h1>
+        <p className="text-gray-600 mt-2">
+          We calculate your BMI index from data like age, height, weight.
+        </p>
       </div>
-      
-      {/* Feature Grid - Only these will have a white background */}
-      <div className="grid md:grid-cols-3 gap-6">
-        {/* Treatment Recommendations */}
-        <div className="p-5 text-center shadow-md rounded-lg bg-white">
-          <div className="flex justify-center mb-4">
-            <Pill className="text-blue-600" size={48} />
-          </div>
-          <h2 className="text-xl font-semibold text-blue-800 mb-3">
-            Treatment Recommendations
-          </h2>
+
+      {/* Features Layout */}
+      <div className="flex justify-between items-start gap-8">
+        {/* Food Recommendation */}
+        <div className="flex-1 bg-white shadow-lg rounded-2xl p-6 text-center">
+          <Utensils className="text-green-600 mb-4 mx-auto" size={48} />
+          <h2 className="text-lg font-semibold text-black">Food Recommendation</h2>
           <p className="text-gray-600">
-            We provide personalized treatment suggestions based on your medical history and symptoms.
+            We provide food recommendations according to your calorie requirements.
           </p>
         </div>
-        
-        {/* Interactive Health Assistant */}
-        <div className="p-5 text-center shadow-md rounded-lg bg-white">
-          <div className="flex justify-center mb-4">
-            <Bot className="text-green-600" size={48} />
-          </div>
-          <h2 className="text-xl font-semibold text-green-800 mb-3">
-            Interactive Health Assistant
-          </h2>
+
+        {/* Interactive Chatbot */}
+        <div className="flex-1 bg-white shadow-lg rounded-2xl p-6 text-center">
+          <Bot className="text-blue-600 mb-4 mx-auto" size={48} />
+          <h2 className="text-lg font-semibold text-black">Interactive Chatbot</h2>
           <p className="text-gray-600">
-            Solve your health queries and get guidance through our smart assistant.
+            Solve your queries by interacting with our bot.
           </p>
         </div>
-        
-        {/* Health Insights */}
-        <div className="p-5 text-center shadow-md rounded-lg bg-white">
-          <div className="flex justify-center mb-4">
-            <ChartBar className="text-purple-600" size={48} />
-          </div>
-          <h2 className="text-xl font-semibold text-purple-800 mb-3">
-            Health Insights
-          </h2>
+
+        {/* Nutritional Value */}
+        <div className="flex-1 bg-white shadow-lg rounded-2xl p-6 text-center">
+          <ChartBar className="text-purple-600 mb-4 mx-auto" size={48} />
+          <h2 className="text-lg font-semibold text-black">Nutritional Value</h2>
           <p className="text-gray-600">
-            Access detailed insights into your medical history and disease patterns.
+            Get all the nutritional values of your preferred dish.
           </p>
         </div>
       </div>

@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@testing-library/react": "^16.2.0",
+    "clsx": "^2.1.1",
     "cra-template": "1.2.0",
     "lucide-react": "^0.474.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "tailwind-merge": "^3.0.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -37,9 +39,11 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.4",
+    "@types/react": "^19.0.10",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
-    "tailwindcss": "^4.0.4"
+    "tailwindcss": "^4.0.4",
+    "typescript": "^5.7.3"
   }
 }
